@@ -18,7 +18,11 @@ def count(request):
     # Esto seria bueno buscar mejor como funciona, es ordenar un diccionario
     sortedword = sorted(worddicc.items(), key=operator.itemgetter(1), reverse=True)
 
-    return render(request, 'count.html', {'fulltext':fulltext, 'count':len(wordlist), 'sortedword':sortedword})
+    return render(request, 'count.html', {
+        'fulltext':fulltext, 
+        'count':len(wordlist), 
+        'sortedword':sortedword
+        })
 
 def about(request):
     return render(request, 'about.html')

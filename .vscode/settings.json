@@ -1,0 +1,5 @@
+{
+    "python.pythonPath": "/Users/pablo/anaconda3/envs/lastpd/bin/python",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
+}
